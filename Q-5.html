@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        ((b*b)(4*a*c))/(2*a) Ans is = <span id="ans"></span>
+    </h2>
+
+    <script>
+        let a = parseInt(prompt('Enter the value of A :- '));
+        let b = parseInt(prompt('Enter the value of B :- '));
+        let c = parseInt(prompt('Enter the value of C :- '));
+
+        greet = (a, b, c) => ((b*b)*(4*a*c))/(2*a);
+
+        document.getElementById('ans').innerHTML = greet(a, b, c); 
+    </script>
+</body>
+
+</html>

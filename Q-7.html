@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        Temprature convert Fahrenheit to Celsius is = <span id="ans"></span>
+    </h2>
+
+    <script>
+        let f = parseInt(prompt('Enter the Temprature in Fahrenheit :- '));
+
+        greet = (t) => (t-32)/1.8;
+
+        document.getElementById('ans').innerHTML = greet(f).toFixed(2); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        Triangle area is = <span id="area"></span>
+    </h2>
+
+    <script>
+        let l = parseInt(prompt('Enter the length of Triangle :- '));
+        let h = parseInt(prompt('Enter the height of Triangle :- '));
+
+        greet = (a, b) => a*b/2;
+
+        document.getElementById('area').innerHTML = greet(l, h); 
+    </script>
+</body>
+
+</html>

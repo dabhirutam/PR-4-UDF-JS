@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        (a*a) + (2*a*b) + (b*b) Ans is = <span id="ans"></span>
+    </h2>
+
+    <script>
+        let a = parseInt(prompt('Enter the value of A :- '));
+        let b = parseInt(prompt('Enter the value of B :- '));
+
+        greet = (a, b) => (a*a) + (2*a*b) + (b*b);
+
+        document.getElementById('ans').innerHTML = greet(a, b); 
+    </script>
+</body>
+
+</html>
